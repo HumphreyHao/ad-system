@@ -33,7 +33,7 @@ public class AccessLogFilter extends ZuulFilter {
 
     @Override
     public Object run() throws ZuulException {
-
+        //这里因为是用了get方法获取的对象，所以虽然命名不同，但是都是一个对象，直接存即可，不用同步
         RequestContext context = RequestContext.getCurrentContext();
         HttpServletRequest request = context.getRequest();
         Long startTime = (Long) context.get("startTime");
