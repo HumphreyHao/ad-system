@@ -12,8 +12,10 @@ zuul:
   prefix: /imooc
   routes:
     sponsor:
+# 一个*代表匹配任意长度，一个？代表任意单个字符，两个**代表多级目录
       path: /ad-sponsor/**
       serviceId: eureka-client-ad-sponsor
+      #过滤前缀
       strip-prefix: false
     search:
       path: /ad-search/**
