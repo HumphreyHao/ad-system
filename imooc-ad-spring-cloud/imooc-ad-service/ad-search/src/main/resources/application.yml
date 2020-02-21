@@ -21,10 +21,10 @@ spring:
       max-active: 4
       min-idle: 2
       initial-size: 2
-#  kafka:
-#    bootstrap-servers: 127.0.0.1:9092
-#    listener:
-#      concurrency: 4
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    listener:
+      concurrency: 4
 
 eureka:
   client:
@@ -41,14 +41,14 @@ management:
       exposure:
         include: "*"
 
-#adconf:
-#  mysql:
-#    host: 127.0.0.1
-#    port: 3306
-#    username: root
-#    password: 12345678
-#    binlogName: binlog.000038
-#    position: 60451
-#
-#  kafka:
-#    topic: ad-search-mysql-data
+adconf:
+  mysql:
+    host: 127.0.0.1
+    port: 3306
+    username: root
+    password: 12345678
+    binlogName: binlog.000038
+    position: 60451
+
+  kafka:
+    topic: ad-search-mysql-data

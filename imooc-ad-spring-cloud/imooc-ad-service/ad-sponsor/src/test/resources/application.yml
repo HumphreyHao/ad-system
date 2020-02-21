@@ -16,7 +16,7 @@ spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/imooc_ad_data?autoReconnect=true
     username: root
-    password: Djangobbs
+    password: 12345678
     tomcat:
       max-active: 4
       min-idle: 2
@@ -26,6 +26,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://server1:8000/eureka/
-    enabled: false
-
-

@@ -21,12 +21,15 @@ spring:
       max-active: 4
       min-idle: 2
       initial-size: 2
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    listener:
+      concurrency: 4
 
 eureka:
   client:
     service-url:
       defaultZone: http://server1:8000/eureka/
-    enabled: false
 
 feign:
   hystrix:
@@ -43,9 +46,9 @@ adconf:
     host: 127.0.0.1
     port: 3306
     username: root
-    password: 12345678
-    binlogName: ""
-    position: -1
+    password: Djangobbs
+    binlogName: binlog.000038
+    position: 60451
 
   kafka:
     topic: ad-search-mysql-data
