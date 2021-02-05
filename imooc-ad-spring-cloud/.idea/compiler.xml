@@ -6,15 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ad-search" />
         <module name="ad-gateway" />
+        <module name="ad-common" />
         <module name="ad-eureka" />
+        <module name="ad-sponsor" />
+        <module name="ad-dashboard" />
+        <module name="untitled" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="untitled" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ad-common" options="-parameters" />
+      <module name="ad-dashboard" options="-parameters" />
       <module name="ad-eureka" options="-parameters" />
       <module name="ad-gateway" options="-parameters" />
+      <module name="ad-search" options="-parameters" />
+      <module name="ad-sponsor" options="-parameters" />
+      <module name="untitled" options="-parameters" />
     </option>
   </component>
 </project>

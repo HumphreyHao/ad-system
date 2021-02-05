@@ -46,7 +46,7 @@ adconf:
     host: 127.0.0.1
     port: 3306
     username: root
-    password: Djangobbs
+    password: 12345678
     binlogName: binlog.000038
     position: 60451
 
